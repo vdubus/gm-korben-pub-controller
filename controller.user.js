@@ -5,8 +5,8 @@
 // @include     http://korben.info/*
 // @version     1
 // @grant       none
-// @downloadURL https://cdn.rawgit.com/vdubus/gm-korben-pub-controller/master/controller.js
-// @updateURL   https://cdn.rawgit.com/vdubus/gm-korben-pub-controller/master/controller.js
+// @downloadURL https://cdn.rawgit.com/vdubus/gm-korben-pub-controller/master/controller.user.js
+// @updateURL   https://cdn.rawgit.com/vdubus/gm-korben-pub-controller/master/controller.user.js
 // @require     https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js
 // @require     https://cdn.rawgit.com/jonnyreeves/js-logger/master/src/logger.js
 // ==/UserScript==
