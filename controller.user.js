@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Korben.info Publicity Article Controller
 // @namespace   com.github.vdubus.greasemonkey.userscript
-// @description Remove publicities articles forn Korben.info website 
+// @description Alert the user about articles containing publicity on Korben.info website 
 // @include     http://korben.info/*
 // @version     1
 // @grant       none
