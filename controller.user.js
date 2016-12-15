@@ -3,7 +3,7 @@
 // @namespace   com.github.vdubus.greasemonkey.userscript
 // @description Alert the user about articles containing publicity on Korben.info website
 // @include     http://korben.info/*
-// @version     1
+// @version     2
 // @grant       none
 // @downloadURL https://cdn.rawgit.com/vdubus/gm-korben-pub-controller/master/controller.user.js
 // @updateURL   https://cdn.rawgit.com/vdubus/gm-korben-pub-controller/master/controller.user.js
@@ -14,7 +14,7 @@ var jQuery2 = jQuery.noConflict(true);
 (function ($) {
 	function initialization() {
 		Logger.useDefaults();
-		var publicities = $('.post-date>p:contains(\'Publicité\')').closest('div[id^=\'post-\']');
+		var publicities = $('.post-date>p:contains(\'Publicité\')').closest('div[id^=\'post-\']').add("div.wesh");
 		publicities.css({
 			'background-color' : '#FFBBBB',
 			'border-style' : 'solid',
