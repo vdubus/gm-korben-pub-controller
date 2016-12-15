@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Korben.info Publicity Article Controller
 // @namespace   com.github.vdubus.greasemonkey.userscript
-// @description Alert the user about articles containing publicity on Korben.info website 
+// @description Alert the user about articles containing publicity on Korben.info website
 // @include     http://korben.info/*
 // @version     1
 // @grant       none
@@ -12,17 +12,17 @@
 // ==/UserScript==
 var jQuery2 = jQuery.noConflict(true);
 (function ($) {
-  function initialization() {
-    Logger.useDefaults();
-    var publicities = $('.post-date>p:contains(\'Publicité\')').closest('div[id^=\'post-\']');
-    publicities.css({
-		'background-color' : '#FFBBBB',
-		'border-style' : 'solid',
-		'border-color' : 'red'
-	});
-    var title = publicities.find('h2.post-title>a');
-    title.text('[Publicity] ' + title.text());
-    Logger.info('Found %d publicity(ies) article(s)', publicities.length);
-  }
-  $(document).ready(initialization);
+	function initialization() {
+		Logger.useDefaults();
+		var publicities = $('.post-date>p:contains(\'Publicité\')').closest('div[id^=\'post-\']');
+		publicities.css({
+			'background-color' : '#FFBBBB',
+			'border-style' : 'solid',
+			'border-color' : 'red'
+		});
+		var title = publicities.find('h2.post-title>a');
+		title.text('[Publicity] ' + title.text());
+		Logger.info('Found %d publicity(ies) article(s)', publicities.length);
+	}
+	$(document).ready(initialization);
 }) (jQuery2);
